@@ -1,10 +1,37 @@
 public class Enemy {
 
-    String name;
-    int health;
+    private String name;
+    private int health;
 
-    public Enemy() {
-        name = "Goblin";
-        health = 50;
+    public Enemy(String name, int health) {
+
+        this.name = name;
+        this.health = health;
+
     }
+
+    public String getName() {
+
+        return name;
+
+    }
+
+    public int getHealth() {
+
+        return health;
+
+    }
+
+    public void takeDamage(int damage) {
+
+        health -= damage;
+
+        if (health < 0) {
+
+            health = 0;
+
+        }
+
+    }
+
 }
