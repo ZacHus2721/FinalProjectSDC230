@@ -1,10 +1,32 @@
 public class Player {
 
-    String name;
-    int health;
+    private String name;
+    private String form;
+    private int powerLevel;
 
-    public Player() {
-        name = "Hero";
-        health = 100;
+    public Player(String name, String form, int powerLevel) {
+        this.name = name;
+        this.form = form;
+        this.powerLevel = powerLevel;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getForm() {
+        return form;
+    }
+
+    public int getPowerLevel() {
+        return powerLevel;
+    }
+
+    public void setForm(String form) {
+        this.form = form;
+    }
+
+    public void setPowerLevel(int powerLevel) {
+        this.powerLevel = powerLevel;
     }
 }
